@@ -1,0 +1,79 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: tomato;
+}
+section[name=dot] {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    animation : dotflip 1s ease-out infinite;
+    
+}
+section[name=square] {
+    display: flex;
+    width: 150px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.dot {
+
+    width: 15px;
+    height: 15px;
+    background-color: wheat;
+    border-radius: 50%;
+}
+.square {
+    width: 20px;
+    height: 60px;
+    background-color: wheat;
+    animation: squarestrech 1s infinite;
+}
+.square:nth-child(1) {
+    animation-delay: 0;
+}
+.square:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.square:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.square:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.square:nth-child(5) {
+    animation-delay: 0.4s;
+}
+@keyframes dotflip {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+@keyframes squarestrech {
+    0% {
+        transform: scaleY(1)
+    }
+    25% {
+        transform: scaleY(1)
+    }
+    50% {
+        transform: scaleY(2)
+    }
+    75% {
+        transform: scaleY(1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
