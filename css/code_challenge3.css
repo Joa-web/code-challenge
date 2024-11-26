@@ -73,6 +73,9 @@ img {
     margin-right: 20px;
 }
 .btn-button__heart:hover, .btn-button__play:hover, .btn-button__plus:hover {
+    background-color: rgba(128, 128, 128, 0.893);
+}
+.btn-button__heart:active, .btn-button__play:active, .btn-button__plus:active {
     background-color: tomato;
 }
 .btn-song {
@@ -89,6 +92,9 @@ img {
 }
 .btn-song__list:hover {
     color: blue;
+}
+.btn-song__list:active {
+    opacity: 0.7;
 }
 .btn-song__title {
     display: flex;
