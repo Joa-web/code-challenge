@@ -1,73 +1,144 @@
+@import "reset.css";
+
 body {
-    margin: 0;
-}
-.nav {
-    background-color: #ffce33;
-    width: 100%;
-}
-.nav__list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px;
-    padding: 35px 0px;
-}
-.nav__list li {
-    list-style: none;
+    width: 340px;
+    padding-left: 10px;
 }
 a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
-.nav__text {
-    font-size: 25px;
+.status-bar {
+    background-color: #ffce32;
+    padding: 30px 10px 50px;
+}
+.status-bar__btn {
+    display: flex;
+    justify-content: space-between;
+}
+.status-bar__list:nth-child(2) a{
+    font-size: 20px;
     font-weight: bold;
 }
-img {
-    border-radius: 15px;
-}
-.day-book__image{
-    float: left;
-    margin-right: 15px;
-}
-.day-book__text {
-    float: left;
-}
-.day-book__keep {
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-radius: 50%;
-    border: 1px solid black;
-}
-.day-book__keep:active {
-    background-color: #ffce33;
-}
-.day-book__buy {
-    height: 35px;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 15px;
-}
-
-
-
-
-.search {
+.btn-search__form {
+    margin: 0px 10px 0px 10px;
     display: flex;
+    width: 320px;
+    height: 50px;
+    border: 1px solid black;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 3px 10px 3px gray;
-    width: 100%;
-    height: 60px;
     justify-content: space-between;
-    border-radius: 15px;
-    padding: 10px 20px;
+    border-radius: 60px;
+    padding: 0px 15px 0px 30px;
     box-sizing: border-box;
 }
-input {
-    border: none;
-    height: 30px;
+.btn-bookday {
+    display: flex;
+    margin: 20px 0px 35px 0px;
 }
-input::placeholder {
+.btn-bookday__img {
+    width: 160px;
+}
+.btn-bookday__img span {
     font-size: 20px;
+    font-weight: bold;
+}
+.btn-bookday__img img {
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.btn-bookday__inpo {
+    margin-top: 40px;
+}
+.btn-bookday__inpo p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.btn-bookday__inpo span {
+    font-size: 14px;
+    color: #e3e3e3;
+    font-weight: bold;
+}
+.btn-bookday__star {
+    margin: 10px 0px 15px;
+}
+.btn-bookday__gener {
+    margin-bottom: 50px;
+}
+.gener {
+    width: 70px;
+    height: 25px;
+    background-color: #f7f7f7;
+    color: black;
+    opacity: 0.7;
+    border: none;
+    cursor: pointer;
+}
+.gener:hover {
+    color: blue;
+    opacity: 1;
+}
+.btn-bookday__keep {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.btn-bookday__keep:active {
+    background-color: #ffce32;
+}
+.btn-bookday__buy {
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-bookday__buy:active {
+    background-color: white;
+    color: black;
+    border: none;
+}
+.btn-best__title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-best__list {
+    margin-top: 20px;
+    display: flex;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+a img {
+    border-radius: 25px;
+    margin: 10px;
+}
+.btn-author {
+    display: flex;
+}
+.btn-author__img {
+    margin-right: 20px;
+}
+.btn-author__img p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+.btn-author__intro {
+    margin-top: 40px;
+}
+.btn-author__intro p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.btn-author__intro span {
+    font-size: 12px;
+    color: #e9e9e9;
+    font-weight: bold;
 }

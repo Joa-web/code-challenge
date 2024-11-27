@@ -7,49 +7,69 @@
     <link rel="stylesheet" href="css/code_challenge4.css">
 </head>
 <body>
-    <nav class="nav">
-            <ul class="nav__list">
-                <li>
-                    <a href="#"><i class="fa-solid fa-bars fa-2x"></i></a>
-                </li>
-                <li>
-                    <a class="nav__text" href="#">Library</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-basket-shopping fa-2x"></i></a>
-                </li>
-            </ul>
+    <nav class="status-bar">
+        <ul class="status-bar__btn">
+            <li class="status-bar__list">
+                <a class="status-bar__a" href="#"><i class="fa-solid fa-bars"></i></a>
+            </li>
+            <li class="status-bar__list">
+                <a class="status-bar__a" href="#">Library</a>
+            </li>
+            <li class="status-bar__list">
+                <a class="status-bar__a" href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+            </li>
+        </ul>
     </nav>
-    <div class="search">
-        <form>
-            <input type="search" placeholder="Search books...">
-        </form>
-        <i class="fa-solid fa-magnifying-glass"></i>
+    <div class="btn-search">
+        <form class="btn-search__form">
+            <input type="search" placeholder="Search Books...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+       </form>
     </div>
-    <main>
-        <section class="day-book">
-            <h2>Book of the day</h2>
-            <dvi class="day-book__image">
-                <img src="images/한강.webp" width="105px" height="160px">
-            </dvi>
-            <dvi class="day-book__text">
-                <h3>소년이 온다</h3>
-                <span>한강</span>
-                <div class="day-book__gener">
-                    <span>소설</span>
-                    <span>한국소설</span>
-                </div>
-                <button class="day-book__keep"><i class="fa-solid fa-tag"></i></button>
-                <button class="day-book__buy">Buy Now</button>
-            </dvi>
-        </section>
-        <section>
-            <h2>Bestseller</h2>
-        </section>
-        <section>
-            <h2>Popular authors</h2>
-        </section>
-    </main>
+    <div class="btn-bookday">
+        <div class="btn-bookday__img">
+            <span>Book of the day</span>
+            <img src="images/한강.webp">
+        </div>
+        <div class="btn-bookday__inpo">
+            <p>소년이 온다</p>
+            <span>한강</span>
+            <div class="btn-bookday__star">
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+            </div>
+            <div class="btn-bookday__gener">
+                <button class="gener">소설</button>
+                <button class="gener">한국소설</button>
+            </div>
+            <div>
+                <button class="btn-bookday__keep"><i class="fa-solid fa-tag"></i></button>
+                <button class="btn-bookday__buy">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="btn-best">
+        <span class="btn-best__title">Best Seller</span>
+        <ul class="btn-best__list">
+            <li><a href="#"><img src="images/넥서스.webp"></a></li>
+            <li><a href="#"><img src="images/작별하지webp.webp"></a></li>
+            <li><a href="#"><img src="images/채식주의자.webp"></a></li>
+            <li><a href="#"><img src="images/희어.webp"></a></li>
+        </ul>
+    </div>
+    <div class="btn-author">
+        <div class="btn-author__img">
+            <p>Popular authors</p>
+            <img src="images/한강작가.jpg" width="170px" height="120px">
+        </div>
+        <div class="btn-author__intro">
+            <p>한강</p>
+            <span>동양인 여성 최초 노벨 문학상 수상</span>
+        </div>
+    </div>
     <script src="https://kit.fontawesome.com/02e4b06e97.js" crossorigin="anonymous"></script>
 </body>
 </html>
