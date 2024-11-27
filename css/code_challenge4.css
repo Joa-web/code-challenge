@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+.nav {
+    background-color: #ffce33;
+    width: 100%;
+}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 35px 0px;
+}
+.nav__list li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+.nav__text {
+    font-size: 25px;
+    font-weight: bold;
+}
+img {
+    border-radius: 15px;
+}
+.day-book__image{
+    float: left;
+    margin-right: 15px;
+}
+.day-book__text {
+    float: left;
+}
+.day-book__keep {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.day-book__keep:active {
+    background-color: #ffce33;
+}
+.day-book__buy {
+    height: 35px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+
+
+
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 10px 3px gray;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+input {
+    border: none;
+    height: 30px;
+}
+input::placeholder {
+    font-size: 20px;
+}
