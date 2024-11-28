@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.btn-singerpage, .btn-musicpage {
+    width: 260px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+}

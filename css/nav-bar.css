@@ -1,0 +1,12 @@
+
+.btn-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    
+}
+.btn-nav button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}

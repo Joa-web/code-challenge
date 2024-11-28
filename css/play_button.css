@@ -1,0 +1,84 @@
+.btn-button {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.btn-button__subscribe, .btn-button__heart {
+    width: 90px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-button__heart i {
+    margin-right: 8px;
+}
+.btn-button__heart span {
+    color: rgba(0, 0, 0, 0.4);
+}
+.btn-button__subscribe:active {
+    background-color: black;
+    color: white;
+}
+.btn-play {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 240px;
+    height: 50px;
+    margin: 20px 10px;
+    background-color: #222222;
+    border-radius: 40px;
+}
+.btn-play__button, .btn-play__info {
+    border: none;
+    background-color: #222222;
+    color:white;
+    cursor: pointer;
+}
+.btn-play__button:active {
+    color: tomato
+}
+.btn-play__singer {
+    color: #6d6d6d;
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+.btn-play__song {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.btn-control {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+}
+.btn-control__repeat, .btn-control__shuffle {
+    border: none;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.btn-control__back, .btn-control__next {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.btn-control__play {
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn-control__repeat:active, .btn-control__shuffle:active {
+    color: black;
+}
+.btn-control__play:active,
+.btn-control__back:active, .btn-control__next:active {
+    color: tomato;
+}
