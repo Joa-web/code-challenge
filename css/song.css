@@ -1,6 +1,7 @@
 .btn-song__list {
     margin-top: 20px;
-    position: relative;
+    overflow-y: hidden;
+
 }
 .btn-song__info {
     display: flex;
@@ -8,7 +9,6 @@
     align-items: center;
     margin-bottom: 10px;
     cursor: pointer;
-    overflow-y: hidden;
 }
 .btn-song__img {
     width: 50px;

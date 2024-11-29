@@ -30,6 +30,8 @@
     margin: 20px 10px;
     background-color: #222222;
     border-radius: 40px;
+    position: absolute;
+    bottom: -15px;
 }
 .btn-play__button, .btn-play__info {
     border: none;
